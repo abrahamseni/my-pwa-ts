@@ -38,7 +38,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev-pwa": "NODE_ENV=production && npm run start",
-    "serve": "serve build -s -l 3300"
+    "serve": "serve build -s -l 3300",
+    "deploy": "yarn build && cd build && surge --domain pwa-agency.surge.sh"
   },
   "eslintConfig": {
     "extends": [
